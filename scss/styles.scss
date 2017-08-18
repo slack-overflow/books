@@ -1,0 +1,19 @@
+//main font
+$main-font: 'Roboto', sans-serif;
+
+//Bold Feature Colors
+$coral:#E14658;
+$navy:#22252C;
+$mountain:#3F3250;
+$scrub:#C0B3A0;
+
+//Antique and Clean Colors:
+$rust:#B56357;
+$mint:#B4DBC0;
+$slate:#EAE3EA;
+$sea-foam:#A7B3A5;
+
+
+html, body {
+    font-family: $main-font;
+}
