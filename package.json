@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "./node_modules/.bin/webpack-dev-server --content-base public --inline --hot"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,7 @@
     "exchange",
     "p2p",
     "share",
-    "textbooks",
-    "yolo"
+    "textbooks"
   ],
   "author": "jason shao, inseok seo",
   "license": "ISC",
@@ -30,14 +29,14 @@
   },
   "homepage": "https://github.com/Selectful/university-bookstore#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "elasticsearch": "^13.3.1",
     "express": "^4.15.4",
     "lodash": "^4.17.4",
     "material-ui": "^1.0.0-beta.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0"
+    "reactstrap": "^4.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

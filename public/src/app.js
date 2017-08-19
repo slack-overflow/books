@@ -1,11 +1,14 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 
 export default class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Placeholder for Navbar</h1>
+                <Navbar />
             </div>
         )
     }
 }
+
+
