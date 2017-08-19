@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,13 @@
   "homepage": "https://github.com/Selectful/university-bookstore#readme",
   "dependencies": {
     "elasticsearch": "^13.3.1",
+    "express": "^4.15.4",
     "lodash": "^4.17.4",
     "material-ui": "^1.0.0-beta.5",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -3,17 +3,13 @@ var path = require('path');
 
 module.exports = {
     devtool: 'inline-source-map',
-    entry: [
-      'webpack-dev-server/client?http://127.0.0.1:8080/',
-      'webpack/hot/only-dev-server',
-      './src' 
-    ],
+    entry: path.join(__dirname, './public/src/index.js'),
     // webpack creates a graph of all of your application's dependencies. 
     //The starting point of this graph is known as an entry point. 
     //The entry point tells webpack where to start and follows the graph of dependencies to know what to bundle. 
     //You can think of your application's entry point as the contextual root or the first file to kick off your app.
     output: {
-      path: path.join(__dirname, 'public'),
+      path: __dirname + '/public',
       filename: 'bundle.js' 
     },
     //Once you've bundled all of your assets together, you still need to tell webpack where to 
@@ -21,7 +17,7 @@ module.exports = {
     module: {
       loaders: [
         {
-          test: /\.jsx?$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           loaders: ['react-hot-loader', 'babel-loader?presets[]=react,presets[]=es2015']
         }
